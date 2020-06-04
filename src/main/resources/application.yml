@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      database: bi
+      host: localhost
+      port: 27017
+      repositories:
+        type: auto
+    redis:
+      repositories:
+        enabled: true
+logging:
+  level:
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
+
+server:
+  port: 8089
